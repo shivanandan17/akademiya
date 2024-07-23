@@ -9,6 +9,7 @@
 # testing
 /coverage
 
+# Checking Protection Branch
 # next.js
 /.next/
 /out/
