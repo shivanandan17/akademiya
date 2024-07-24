@@ -18,7 +18,7 @@ export const NavbarRoutes = () => {
         <Link href="/">
           <Button
             size="sm"
-            className="text-rose-500 bg-stone-900 hover:text-white hover:bg-rose-500 transition-all"
+            className="text-rose-500 border border-rose-500 bg-stone-900 hover:text-white hover:bg-rose-500 hover:border-white transition-all"
           >
             <LogOut className="h-4 w-4 mr-2" />
             Exit
@@ -28,7 +28,7 @@ export const NavbarRoutes = () => {
         <Link href="/teacher/courses">
           <Button
             size="sm"
-            className="text-rose-500 bg-stone-900 hover:text-white hover:bg-rose-500 transition-all"
+            className="text-rose-500 border border-rose-500 bg-stone-900 hover:text-white hover:bg-rose-500 hover:border-white transition-all"
           >
             Teacher Mode
           </Button>
