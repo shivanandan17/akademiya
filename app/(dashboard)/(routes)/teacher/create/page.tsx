@@ -45,8 +45,8 @@ const CreatePage = () => {
   return (
     <div className="max-w-5xl mx-auto flex md:item-center md:justify-center p-6">
       <div>
-        <h1 className="text-2xl">Name your Course</h1>
-        <p className="text-sm text-slate-600">
+        <h1 className="text-white text-2xl">Name your Course</h1>
+        <p className="text-sm text-stone-400">
           What would you like to name your course? Don&apos;t worry you can
           change later.
         </p>
@@ -60,15 +60,16 @@ const CreatePage = () => {
               name="title"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Course title</FormLabel>
+                  <FormLabel className="text-white">Course title</FormLabel>
                   <FormControl>
                     <Input
+                      className="focus:border-slate-900"
                       disabled={isSubmitting}
                       placeholder="e.g. Java Backend Development"
                       {...field}
                     />
                   </FormControl>
-                  <FormDescription>
+                  <FormDescription className="text-stone-400">
                     What will you teach in this course?
                   </FormDescription>
                   <FormMessage />
@@ -77,11 +78,18 @@ const CreatePage = () => {
             />
             <div className="flex items-center gap-x-2">
               <Link href="/">
-                <Button type="button" variant="ghost">
+                <Button
+                  type="button"
+                  className="bg-white text-stone-700 hover:bg-stone-700 hover:text-white"
+                >
                   Cancel
                 </Button>
               </Link>
-              <Button type="submit" disabled={!isValid || isSubmitting}>
+              <Button
+                type="submit"
+                className="bg-rose-500 hover:bg-rose-700"
+                disabled={!isValid || isSubmitting}
+              >
                 Continue
               </Button>
             </div>
